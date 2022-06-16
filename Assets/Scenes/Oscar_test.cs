@@ -13,6 +13,6 @@ public class Oscar_test : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        hello;
+        print("hello");
     }
 }
