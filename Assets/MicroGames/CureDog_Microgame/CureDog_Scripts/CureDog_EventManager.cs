@@ -9,7 +9,6 @@ public class CureDog_EventManager : MonoBehaviour
         Shared_EventsManager.MouseHold += PotionFalling; //from the "Shared_EventsManager"
         Shared_EventsManager.MouseLetGo += PotionGone; //from the "Shared_EventsManager"
     }
-
     void OnDisable()
     {
         Shared_EventsManager.MouseHold -= PotionFalling; //from the "Shared_EventsManager"
