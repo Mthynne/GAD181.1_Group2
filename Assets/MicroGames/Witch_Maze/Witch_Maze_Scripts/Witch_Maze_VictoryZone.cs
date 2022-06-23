@@ -5,12 +5,14 @@ using UnityEngine;
 public class Witch_Maze_VictoryZone : MonoBehaviour
 {
     // Start is called before the first frame update
-
-
-    void OnTriggerEnter2D(Collider2D c)
+    void OnCollisionEnter2D(Collision2D collision)
     {
-
-        Debug.Log("Victory!");
+        if (collision.collider.CompareTag("Player"))
+        {
+           
+            Destroy(collision.gameObject);
+            Debug.Log("Victory!");
+        }
 
     }
 }
