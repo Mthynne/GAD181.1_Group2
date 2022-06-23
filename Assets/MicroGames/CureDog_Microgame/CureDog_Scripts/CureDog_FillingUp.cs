@@ -6,7 +6,8 @@ public class CureDog_FillingUp : MonoBehaviour
 {
     private bool dogFullStatus = false; //to cap it
     private bool potionActivate = false; //for whether to pour or not
-    private int intPourTime = 0; //counter for holding **needs Work - Oscar**
+    private float intPourTime = 0.0f; //counter for holding **needs Work - Oscar**
+    private int seconds;
 
     void OnEnable()
     {
@@ -22,38 +23,74 @@ public class CureDog_FillingUp : MonoBehaviour
 
     void Update()
     {
-        //
+        //if (the mouse button is being held down)
+        //{
+            //increase the number by one every second
+        //}
+
+        //else if the mouse is NOT being held down
+        //{
+            //stop the timer at whatever value it is at
+        //}
+        
         if(potionActivate == true)
         {
-            //somethings not working here ****
-            if((int)Time.time > intPourTime && dogFullStatus == false) //timer
-            {
-                intPourTime++;
-                intPourTime = (int)Time.time; //pour to the time
-                print(intPourTime);
-                
-                if(intPourTime == 6)
-                {
-                    print("win");
-                    dogFullStatus = true;
-                }
-            }
-            else if(potionActivate == false)
-            {
-                intPourTime = 0; //if turned off **ideally** reset timer to 0
-            }
+            TimerPouring();
+        }
+        else if(potionActivate == false)
+        {
+            TimerResetPour();
         }
     }
 
     void PotionCount()
-    {
+    {   
+        //Is the Mouse being held?
+        //Should the game be running as if it is running?
+        //Yes it should
         potionActivate = true;
-        Update();
     }
 
     void PotionFreeze()
-    {
+    {   
+        //Is the Mouse being held?
+        //Should the game be running as if it is running?
+        //No it shouldn't
         potionActivate = false;
-        Update();
     }
+
+    void TimerPouring()
+    {
+        //increase value of timer
+        //print value in console
+        //if(the timer reaches the value of 6)
+        //{
+            //win the game
+            //print win
+        //}
+        
+        //seconds
+        intPourTime += Time.deltaTime;
+        //turn float into seconds
+        seconds = (int)(intPourTime % 60);
+        print(intPourTime);
+                
+        if(intPourTime >= 6f)
+        {
+            print("win");
+            dogFullStatus = true;
+        }
+    }
+
+    void TimerResetPour()
+    {
+        //reset the value of the timer back to 0 and keep at 0 until turned on.
+
+        //seconds
+        intPourTime = Time.deltaTime;
+        //turn float into seconds
+        seconds = (int)(intPourTime % 60);
+        print(intPourTime);
+    }
+
 }
