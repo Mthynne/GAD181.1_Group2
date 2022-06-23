@@ -22,7 +22,7 @@ public class PourIngredients_Cup_Rotation : MonoBehaviour
         boolPourIngredients = false;
     }
 
-    void Update()
+    void FixedUpdate()
     {
         if(boolPourIngredients == true)
         {

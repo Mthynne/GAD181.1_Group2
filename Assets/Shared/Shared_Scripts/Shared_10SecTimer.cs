@@ -4,11 +4,12 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class Timer : MonoBehaviour
+public class Shared_10SecTimer : MonoBehaviour
 {
     public TextMeshProUGUI countdownText;
-    [SerializeField] float countdownTime;
+    private float countdownTime = 10.0f;
     private bool isCounting;
+    private bool boolBeatTimer;
     
 
     private void Awake()
@@ -22,7 +23,8 @@ public class Timer : MonoBehaviour
         
         if (countdownTime <= 0.1f)
         {
-           Debug.Log("Failure");
+            Debug.Log("Failure");
+            Shared_EventsManager.DefinatelyLost();
         }
 
         else
