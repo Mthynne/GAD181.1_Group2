@@ -8,7 +8,6 @@ public class Witch_Maze_Witch : MonoBehaviour
     public float speed;
     private Rigidbody2D rb;
     private Vector2 moveVelocity;
-    private float movement = 0f;
     public bool IsMoving;
     // Start is called before the first frame update
     void Start()
