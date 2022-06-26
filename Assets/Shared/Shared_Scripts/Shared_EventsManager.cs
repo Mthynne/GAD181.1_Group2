@@ -22,13 +22,13 @@ public class Shared_EventsManager : MonoBehaviour
         MouseLetGo();
     }
     
-    //Event to do Losing
-    public delegate void LoseMicroGame();
-    public static event LoseMicroGame LostMicroGame;
+    //Event to do end of timer function
+    public delegate void EndOfTimer();
+    public static event EndOfTimer EndOfMicroGame;
 
-    public static void DefinatelyLost()
+    public static void TimerDone()
     {
-        LostMicroGame();
+        EndOfMicroGame();
     }
 
 }
