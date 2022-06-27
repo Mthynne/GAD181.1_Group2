@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Shared_Mouse_Hold : MonoBehaviour
 {
-    
     void Update()
     {
         //handles left mouse button hold
@@ -18,6 +17,5 @@ public class Shared_Mouse_Hold : MonoBehaviour
             print("Mouse Released");
             Shared_EventsManager.NoMouseInput();
         }
-
     }
 }
