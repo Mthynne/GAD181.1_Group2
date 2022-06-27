@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CureDog_FillingUp : MonoBehaviour
 {
@@ -9,18 +10,23 @@ public class CureDog_FillingUp : MonoBehaviour
     private float intPourTime = 0.0f; //counter for holding **needs Work - Oscar**
     private int seconds;
 
+    private bool GameTimerEnded = false;
+    private bool WinGame = false;
+
     void OnEnable()
     {
         CureDog_EventManager.PouredPotion += PotionCount;
         CureDog_EventManager.NoPotion += PotionFreeze;
+        Shared_EventsManager.EndOfMicroGame += GameTimeDuration; //from the "Shared_EventsManager"
     }
     
     void OnDisable()
     {
         CureDog_EventManager.PouredPotion -= PotionCount;
         CureDog_EventManager.NoPotion -= PotionFreeze;
+        Shared_EventsManager.EndOfMicroGame -= GameTimeDuration; //from the "Shared_EventsManager"
     }
-
+    
     void Update()
     {
         //if (the mouse button is being held down)
@@ -77,8 +83,9 @@ public class CureDog_FillingUp : MonoBehaviour
                 
         if(intPourTime >= 6f)
         {
-            print("win");
+            WinGame = true;
             dogFullStatus = true;
+            print("win");
         }
     }
 
@@ -93,4 +100,43 @@ public class CureDog_FillingUp : MonoBehaviour
         print(intPourTime);
     }
 
+    void GameTimeDuration()
+    {
+        //if the TimeDuration is called from the event
+        //{
+            //bool TimeEnded changes to true
+            //run the end game function
+        //}
+
+        GameTimerEnded = true;
+        EndGame();
+    }
+
+
+    void EndGame()
+    {
+        //if the player is eligable to win the game and the timer has ended
+        //{
+            //print the word winner in the console    
+        //}
+        //else
+        //{
+            //reload the scene to try again    
+        //}
+
+        if(WinGame == true && GameTimerEnded == true)
+        {
+            print("WINNER!");
+        }
+        else
+        {
+            print("FAILED!");
+            ReloadScene();
+        }
+    }
+
+    void ReloadScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); //reloads the scene again.
+    }
 }
