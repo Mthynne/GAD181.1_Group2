@@ -50,7 +50,7 @@ public class PourIngredients_Pot_Collision : MonoBehaviour
             //player is eligeble to win the game
         //}
 
-        if(ingredNum <= 15)
+        if(ingredNum >= 18)
         {
             WinGame = true;
         }

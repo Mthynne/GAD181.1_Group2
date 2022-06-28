@@ -40,7 +40,7 @@ public class DogBeautyComp_Cheer : MonoBehaviour
             //player is eligeble to win the game
         //}
 
-        if(cheerNum >= 15)
+        if(cheerNum >= 30)
         {
             WinGame = true;
         }
