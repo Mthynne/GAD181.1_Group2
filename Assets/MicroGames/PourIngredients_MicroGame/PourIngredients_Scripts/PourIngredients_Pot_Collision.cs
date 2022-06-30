@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class PourIngredients_Pot_Collision : MonoBehaviour
 {
@@ -72,10 +71,12 @@ public class PourIngredients_Pot_Collision : MonoBehaviour
     {
         //if the player is eligable to win the game and the timer has ended
         //{
+            //change the scene to the next in order
             //print the word winner in the console    
         //}
         //else
         //{
+            //print "failed" into the console
             //reload the scene to try again    
         //}
 
