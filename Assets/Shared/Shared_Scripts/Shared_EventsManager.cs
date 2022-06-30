@@ -30,5 +30,22 @@ public class Shared_EventsManager : MonoBehaviour
     {
         EndOfMicroGame();
     }
+   
+    //Event to do Win function
+    public delegate void WinningEvent();
+    public static event WinningEvent CompleteGame;
 
+    public static void GameHasBeenWon()
+    {
+        CompleteGame();
+    }
+
+    //Event to do Lose function
+    public delegate void LosingEvent();
+    public static event LosingEvent LostTheGame;
+
+    public static void GameHasBeenLost()
+    {
+        LostTheGame();
+    }
 }

@@ -82,16 +82,13 @@ public class PourIngredients_Pot_Collision : MonoBehaviour
         if(WinGame == true && TimerEnded == true)
         {
             print("WINNER!");
+            Shared_EventsManager.GameHasBeenWon();
         }
         else
         {
             print("FAILED!");
-            ReloadScene();
+            Shared_EventsManager.GameHasBeenLost();
         }
     }
-
-    void ReloadScene()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); //reloads the scene again.
-    }
+    
 }
