@@ -1,12 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class PourIngredients_SceneManager : MonoBehaviour
 {
     private bool sceneSwap;
     private bool sceneRetry;
+
+    public GameObject failedBTN; //using button for now as I have no image
+    public GameObject WinBTN; //using button for now as I have no image
 
     void OnEnable()
     {
@@ -21,6 +25,8 @@ public class PourIngredients_SceneManager : MonoBehaviour
     
     void Start()
     {
+        failedBTN.SetActive(false);
+        WinBTN.SetActive(false);
         sceneSwap = false;
         sceneRetry = false;
     }
@@ -65,11 +71,13 @@ public class PourIngredients_SceneManager : MonoBehaviour
 
     void ProgressStartSwapTimer()
     {
+        WinBTN.SetActive(true);
         sceneSwap = true;
     }
 
     void StartRetryTimer()
     {
+        failedBTN.SetActive(true);
         sceneRetry = true;
     }
 }
