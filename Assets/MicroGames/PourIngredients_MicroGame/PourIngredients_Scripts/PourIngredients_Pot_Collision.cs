@@ -86,12 +86,8 @@ public class PourIngredients_Pot_Collision : MonoBehaviour
         else
         {
             print("FAILED!");
-            ReloadScene();
+            SceneManager.LoadScene("LoseScene", LoadSceneMode.Single);
         }
     }
 
-    void ReloadScene()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); //reloads the scene again.
-    }
 }

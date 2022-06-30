@@ -31,4 +31,22 @@ public class Shared_EventsManager : MonoBehaviour
         EndOfMicroGame();
     }
 
+    //Event to do the change scene function in order
+    public delegate void CompleteGame();
+    public static event CompleteGame MicroGameSuccess;
+
+    public static void GameWasCompleted()
+    {
+        MicroGameSuccess();
+    }
+
+    //Event to do the change scene back to same scene.
+    public delegate void FailedGame();
+    public static event FailedGame MicroGameFailed;
+
+    public static void TheGameFailed()
+    {
+        MicroGameFailed();
+    }
+
 }

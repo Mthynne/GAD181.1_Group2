@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class CureDog_FillingUp : MonoBehaviour
 {
-    private bool dogFullStatus = false; //to cap it
+    private bool dogFullStatus; //to cap it
     private bool potionActivate = false; //for whether to pour or not
     private float intPourTime = 0.0f; //counter for holding **needs Work - Oscar**
     private int seconds;
