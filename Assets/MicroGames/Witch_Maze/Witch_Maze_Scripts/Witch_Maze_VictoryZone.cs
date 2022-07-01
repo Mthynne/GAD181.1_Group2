@@ -15,8 +15,17 @@ public class Witch_Maze_VictoryZone : MonoBehaviour
            
             Destroy(collision.gameObject);
             Debug.Log("Victory!");
+            WinGame = true;
         }
 
+    }
+    void OnEnable() //enable called event
+    {
+        Shared_EventsManager.EndOfMicroGame += TimeDuration; //from the "Shared_EventsManager"
+    }
+    void OnDisable() //disable called event
+    {
+        Shared_EventsManager.EndOfMicroGame -= TimeDuration; //from the "Shared_EventsManager"
     }
     void TimeDuration()
     {
@@ -31,16 +40,7 @@ public class Witch_Maze_VictoryZone : MonoBehaviour
     }
     void EndGame()
     {
-        //if the player is eligable to win the game and the timer has ended
-        //{
-        //change the scene to the next in order
-        //print the word winner in the console    
-        //}
-        //else
-        //{
-        //print "failed" into the console
-        //reload the scene to try again    
-        //}
+    
 
         if (WinGame == true && TimerEnded == true)
         {

@@ -2,22 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Witch_Maze_Failure : MonoBehaviour
+public class Villager_Win_Condition : MonoBehaviour
 {
     private bool TimerEnded;
     private bool WinGame;
 
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.collider.CompareTag("Player"))
-        {
-           
-            Destroy(collision.gameObject);
-            Debug.Log("You Lose!");
-            WinGame = false;
-        }
-       
-    }
     void OnEnable() //enable called event
     {
         Shared_EventsManager.EndOfMicroGame += TimeDuration; //from the "Shared_EventsManager"
@@ -35,6 +24,7 @@ public class Witch_Maze_Failure : MonoBehaviour
         //}
 
         TimerEnded = true;
+        WinGame = true;
         EndGame();
     }
     void EndGame()
@@ -52,5 +42,4 @@ public class Witch_Maze_Failure : MonoBehaviour
             Shared_EventsManager.GameHasBeenLost();
         }
     }
-
 }
