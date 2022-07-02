@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class CureDog_FillingUp : MonoBehaviour
 {
@@ -127,16 +126,12 @@ public class CureDog_FillingUp : MonoBehaviour
         if(WinGame == true && GameTimerEnded == true)
         {
             print("WINNER!");
+            Shared_EventsManager.GameHasBeenWon();
         }
         else
         {
             print("FAILED!");
-            ReloadScene();
+            Shared_EventsManager.GameHasBeenLost();
         }
-    }
-
-    void ReloadScene()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); //reloads the scene again.
     }
 }
