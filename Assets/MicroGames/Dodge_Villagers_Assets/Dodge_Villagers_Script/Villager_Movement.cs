@@ -9,7 +9,6 @@ public class Villager_Movement : MonoBehaviour
     private Vector2 screenBounds;
     private bool WinGame;
     private bool TimerEnded;
-    public GameObject Witch;
     private bool isDead;
     
     // Start is called before the first frame update
@@ -40,43 +39,10 @@ public class Villager_Movement : MonoBehaviour
             Debug.Log("You Lose!");
             isDead = true;
             WinGame = false;
-        }
-
-    }
-    void OnEnable() //enable called event
-    {
-        Shared_EventsManager.EndOfMicroGame += TimeDuration; //from the "Shared_EventsManager"
-    }
-    void OnDisable() //disable called event
-    {
-        Shared_EventsManager.EndOfMicroGame -= TimeDuration; //from the "Shared_EventsManager"
-    }
-    void TimeDuration()
-    {
-        //if the TimeDuration is called from the event
-        //{
-        //bool TimeEnded changes to true
-        //run the end game function
-        //}
-
-        TimerEnded = true;
-        WinGame = false;
-        EndGame();
-    }
-    void EndGame()
-    {
-
-
-        if (WinGame == true && TimerEnded == true)
-        {
-            print("WINNER!");
-            Shared_EventsManager.GameHasBeenWon();
-        }
-        else
-        {
             print("FAILED!");
             Shared_EventsManager.GameHasBeenLost();
         }
-    }
 
+    }
+   
 }

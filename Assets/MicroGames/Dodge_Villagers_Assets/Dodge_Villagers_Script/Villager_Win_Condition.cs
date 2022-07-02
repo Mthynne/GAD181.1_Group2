@@ -36,10 +36,6 @@ public class Villager_Win_Condition : MonoBehaviour
             print("WINNER!");
             Shared_EventsManager.GameHasBeenWon();
         }
-        else
-        {
-            print("FAILED!");
-            Shared_EventsManager.GameHasBeenLost();
-        }
+       
     }
 }
