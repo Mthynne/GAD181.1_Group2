@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class CureDog_FillingUp : MonoBehaviour
 {
-    private bool dogFullStatus; //to cap it
     private bool potionActivate = false; //for whether to pour or not
     private float intPourTime = 0.0f; //counter for holding **needs Work - Oscar**
     private int seconds;
@@ -83,7 +82,11 @@ public class CureDog_FillingUp : MonoBehaviour
         if(intPourTime >= 6f)
         {
             WinGame = true;
-            dogFullStatus = true;
+            print("win");
+        }
+        else 
+        {
+            WinGame = false;
             print("win");
         }
     }
