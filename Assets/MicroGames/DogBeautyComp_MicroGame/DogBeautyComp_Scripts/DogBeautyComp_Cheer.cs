@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class DogBeautyComp_Cheer : MonoBehaviour
 {
@@ -18,7 +17,7 @@ public class DogBeautyComp_Cheer : MonoBehaviour
     void OnDisable()
     {
         Shared_EventsManager.MouseHold -= IncreaseCheerNum; //from the "Shared_EventsManager"
-
+        Shared_EventsManager.EndOfMicroGame -= TimeDuration; //from the "Shared_EventsManager"
     }
     void Start()
     {
@@ -70,16 +69,13 @@ public class DogBeautyComp_Cheer : MonoBehaviour
         if(WinGame == true && TimerEnded == true)
         {
             print("WINNER!");
+            Shared_EventsManager.GameHasBeenWon();
+
         }
         else
         {
             print("FAILED!");
-            ReloadScene();
+            Shared_EventsManager.GameHasBeenLost();
         }
-    }
-    
-    void ReloadScene()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); //reloads the scene again.
     }
 }

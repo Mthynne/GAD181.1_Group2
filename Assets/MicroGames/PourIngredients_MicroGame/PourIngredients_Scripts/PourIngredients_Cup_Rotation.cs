@@ -26,11 +26,11 @@ public class PourIngredients_Cup_Rotation : MonoBehaviour
     {
         if(boolPourIngredients == true)
         {
-            this.transform.Rotate(new Vector3(0, 0, 90) * Time.deltaTime);
+            this.transform.Rotate(new Vector3(0, 0, 150) * Time.deltaTime);
         }
             else if(boolPourIngredients == false)
         {
-            this.transform.Rotate(new Vector3(0, 0, -90) * Time.deltaTime);
+            this.transform.Rotate(new Vector3(0, 0, -150) * Time.deltaTime);
         }
     }
 
