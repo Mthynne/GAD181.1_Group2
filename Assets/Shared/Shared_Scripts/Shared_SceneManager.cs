@@ -53,7 +53,7 @@ public class Shared_SceneManager : MonoBehaviour
         //}
         if(sceneSwap == true)
         {
-            float delayForSceneSwap = 5f;
+            float delayForSceneSwap = 3f;
             StartCoroutine(LoadNewSceneAfterDelay(delayForSceneSwap));
         }
         
@@ -63,7 +63,7 @@ public class Shared_SceneManager : MonoBehaviour
         //}
         if(sceneRetry == true)
         {
-            float delayForSceneSwap = 5f;
+            float delayForSceneSwap = 3f;
             StartCoroutine(LoadSameSceneAfterDelay(delayForSceneSwap));
         }
     }

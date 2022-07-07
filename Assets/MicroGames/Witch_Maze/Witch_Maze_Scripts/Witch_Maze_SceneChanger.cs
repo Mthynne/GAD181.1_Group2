@@ -38,7 +38,7 @@ public class Witch_Maze_SceneChanger : MonoBehaviour
         //}
         if (sceneSwap == true)
         {
-            float delayForSceneSwap = 5f;
+            float delayForSceneSwap = 1.5f;
             StartCoroutine(LoadNewSceneAfterDelay(delayForSceneSwap));
         }
 
@@ -48,7 +48,7 @@ public class Witch_Maze_SceneChanger : MonoBehaviour
         //}
         if (sceneRetry == true)
         {
-            float delayForSceneSwap = 5f;
+            float delayForSceneSwap = 1.5f;
             StartCoroutine(LoadSameSceneAfterDelay(delayForSceneSwap));
         }
     }

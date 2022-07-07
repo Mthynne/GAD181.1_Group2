@@ -539,6 +539,7 @@ GameObject:
   - component: {fileID: 739942966}
   - component: {fileID: 739942965}
   - component: {fileID: 739942967}
+  - component: {fileID: 739942968}
   m_Layer: 0
   m_Name: Witch
   m_TagString: Player
@@ -657,7 +658,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 5
 --- !u!114 &739942967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -671,8 +672,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  jumpSpeed: 5
+  jumpSpeed: 6
   Witch: {fileID: 739942960}
+--- !u!114 &739942968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 739942960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edea1049ce770b549b7d500b5a95c94f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &925205101
 GameObject:
   m_ObjectHideFlags: 0

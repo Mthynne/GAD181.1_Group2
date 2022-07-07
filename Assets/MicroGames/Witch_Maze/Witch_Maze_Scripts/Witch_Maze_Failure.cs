@@ -14,6 +14,7 @@ public class Witch_Maze_Failure : MonoBehaviour
            
             Destroy(collision.gameObject);
             Debug.Log("You Lose!");
+            Shared_EventsManager.GameHasBeenLost();
             WinGame = false;
         }
        
