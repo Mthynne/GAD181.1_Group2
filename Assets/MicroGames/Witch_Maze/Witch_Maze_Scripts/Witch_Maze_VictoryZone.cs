@@ -15,6 +15,7 @@ public class Witch_Maze_VictoryZone : MonoBehaviour
            
             Destroy(collision.gameObject);
             Debug.Log("Victory!");
+            Shared_EventsManager.GameHasBeenWon();
             WinGame = true;
         }
 
