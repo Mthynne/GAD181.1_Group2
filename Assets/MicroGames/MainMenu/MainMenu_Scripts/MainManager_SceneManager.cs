@@ -1,18 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MainManager_SceneManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public void PlayTheGame()
     {
-        
-    }
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +1);
+        print("Play the game");
+    } 
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
