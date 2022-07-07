@@ -22,20 +22,8 @@ public class Witch_Dodge : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        direction = Input.GetAxis("Horizontal");
-        if (direction >0f)
-        {
-            player.velocity = new Vector2(direction * speed, player.velocity.y);
-        }
-        else if (direction < 0f)
-        {
-            player.velocity = new Vector2(direction * speed, player.velocity.y);
-        }
-        else
-        {
-            player.velocity = new Vector2(0, player.velocity.y);
-        }
-        if (Input.GetButtonDown("Jump"))
+       
+        if (Input.GetButtonDown("Jump")&& this.transform.position.y<-4.5f)
         {
             player.velocity = new Vector2(player.velocity.x, jumpSpeed);
         }
