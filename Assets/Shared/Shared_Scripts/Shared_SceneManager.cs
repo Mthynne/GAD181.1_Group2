@@ -31,7 +31,7 @@ public class Shared_SceneManager : MonoBehaviour
         Shared_EventsManager.LostTheGame -= StartRetryTimer; //from the "Shared_EventsManager"
     }
     
-
+    
     //we need to make sure that the bools and buttons are set to false so they dont appear or start 
     //the win or lose function yet.
     void Start()

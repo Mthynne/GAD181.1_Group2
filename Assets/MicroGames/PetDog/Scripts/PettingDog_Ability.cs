@@ -2,21 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class PettingDog_Ability : MonoBehaviour
 {
     public static int score = 0;
 
-    public Text pointsScore;
+    public TextMeshProUGUI pointsScore;
 
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Q))
+        if(Input.GetKeyDown("q"))
         {
-
-            GainedPoints();
+            print("pressed");
+            score += 10;
+            pointsScore.text = "Points: " + score;
+            //GainedPoints();
             
             
         }

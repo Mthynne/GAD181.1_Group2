@@ -35,6 +35,7 @@ public class MixingAbility : MonoBehaviour
             Spoon.transform.position = new Vector3(1f, 0, 0);
             score += 1;
             print("A key was pressed Score: " + score);
+            WinCondition();
         }
 
         else if (Input.GetKeyDown(KeyCode.D))
@@ -43,7 +44,7 @@ public class MixingAbility : MonoBehaviour
             Spoon.transform.position = new Vector3(-1f, 0, 0);
             score += 1;
             print("D key was pressed Score: " + score);
-            
+            WinCondition();
 
         }
    
@@ -74,7 +75,7 @@ public class MixingAbility : MonoBehaviour
         if (WinGame == true && TimerEnded == true)
         {
             print("Winner!");
-            SceneManager.LoadScene(9);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +1);
 
 
         }
@@ -82,7 +83,7 @@ public class MixingAbility : MonoBehaviour
         {
 
             print("Failure!");
-            SceneManager.LoadScene(10);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 
         }
     }
