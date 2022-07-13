@@ -34,13 +34,16 @@ public class Villager_Movement : MonoBehaviour
     {
         if (collision.collider.CompareTag("Player"))
         {
-
-            Destroy(collision.gameObject);
-            Debug.Log("You Lose!");
-            isDead = true;
-            WinGame = false;
-            print("FAILED!");
-            Shared_EventsManager.GameHasBeenLost();
+            Heart_System.health--;
+            if(Heart_System.health<=0)
+            {
+                Destroy(collision.gameObject);
+                Debug.Log("You Lose!");
+                isDead = true;
+                WinGame = false;
+                Shared_EventsManager.GameHasBeenLost();
+            }
+           
         }
 
     }
