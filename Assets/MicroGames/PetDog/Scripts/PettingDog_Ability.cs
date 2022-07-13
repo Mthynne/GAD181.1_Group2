@@ -2,26 +2,40 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class PettingDog_Ability : MonoBehaviour
 {
     public static int score = 0;
-
+    private bool TimerEnded;
+    private bool WinGame;
     public TextMeshProUGUI pointsScore;
 
+    void OnEnable() //enable called event
+    {
+        Shared_EventsManager.EndOfMicroGame += TimerLength; //from the "Shared_EventsManager"
+    }
+    void OnDisable() //disable called event
+    {
+        Shared_EventsManager.EndOfMicroGame -= TimerLength; //from the "Shared_EventsManager"
+    }
+
+    void Start()
+    {
+        TimerEnded = false; //timer hasnt ended
+        WinGame = false; //game hasn't won 
+    }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown("q"))
+        if (Input.GetKeyDown(KeyCode.Q))
         {
-            print("pressed");
-            score += 10;
-            pointsScore.text = "Points: " + score;
-            //GainedPoints();
             
-            
+            GainedPoints();
+            WinCondition();
+
         }
 
     }
@@ -34,6 +48,44 @@ public class PettingDog_Ability : MonoBehaviour
         pointsScore.text = "Points: " + score;
 
 
+    }
+
+    void WinCondition()
+    {
+        if (score >= 15)
+        {
+
+            WinGame = true;
+
+        }
+
+
+    }
+
+    void TimerLength()
+    {
+
+        TimerEnded = true;
+        EndGame();
+
+    }
+
+    void EndGame()
+    {
+        if (WinGame == true && TimerEnded == true)
+        {
+            print("Winner!");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+
+
+        }
+        else
+        {
+
+            print("Failure!");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
+        }
     }
 
 }
