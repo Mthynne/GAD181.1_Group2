@@ -12,6 +12,14 @@ public class TrackObject : MonoBehaviour
     //amount of objects, needed for timer to recognise when game is done
     bool winnerofgame = false;
 
+    void OnEnable()
+    {
+        Shared_EventsManager.LostTheGame += RestartRemainingObjects; //from the "Shared_EventsManager"
+    }
+    void OnDisable()
+    {
+        Shared_EventsManager.LostTheGame += RestartRemainingObjects; //from the "Shared_EventsManager"
+    }
     void OnMouseDown()
     {
         objectName = gameObject.name;
@@ -33,5 +41,10 @@ public class TrackObject : MonoBehaviour
         {
             Shared_EventsManager.GameHasBeenWon();
         }
+    }
+
+    void RestartRemainingObjects()
+    {
+        remainingObjects = 5;
     }
 }
