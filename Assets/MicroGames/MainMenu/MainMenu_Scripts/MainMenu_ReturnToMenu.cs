@@ -13,6 +13,14 @@ public class MainMenu_ReturnToMenu : MonoBehaviour
 
     public void ReturnClick()
     {
+        //when the return button is pressed
+            //make the play button appear
+            //make the options button appear
+            //make the credits button appear
+            //make the exit button appear
+            //make the return button disappear
+            //make the fullscreen button disappear
+
         play.gameObject.SetActive(true);
         options.gameObject.SetActive(true);
         credits.gameObject.SetActive(true);

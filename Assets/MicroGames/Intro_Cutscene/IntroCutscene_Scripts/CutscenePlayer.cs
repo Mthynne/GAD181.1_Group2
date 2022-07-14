@@ -6,17 +6,23 @@ using UnityEngine.Video;
 
 public class CutscenePlayer : MonoBehaviour
 {
-    VideoPlayer IntroCutsceneVid;
+    //detects the video that it wants to play
+    VideoPlayer IntroCutsceneVid; 
 
     void Awake()
     {
-        IntroCutsceneVid = GetComponent<VideoPlayer>();
-        IntroCutsceneVid.Play();
-        IntroCutsceneVid.loopPointReached += CheckOver;
+        //get the video
+        //play the video
+        //when the video reaches the end of the video, change the scene
+
+        IntroCutsceneVid = GetComponent<VideoPlayer>(); //this grabs the video so there is something to play
+        IntroCutsceneVid.Play(); //this plays the video
+        IntroCutsceneVid.loopPointReached += CheckOver; //this checks to see if its at the loop point and when it is it will start CheckOver().
     }
 
     void CheckOver(UnityEngine.Video.VideoPlayer vp)
     {
+        //change the scene when the video reaches the end.
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +1);
     }
 }
