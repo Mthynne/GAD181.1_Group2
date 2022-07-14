@@ -18,7 +18,7 @@ public class Witch_Maze_Witch : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
+      //consider using getaxis raw :sunglasses:
             if (Input.GetKey(KeyCode.W))
             {
 
