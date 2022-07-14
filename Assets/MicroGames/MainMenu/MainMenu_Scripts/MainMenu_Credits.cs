@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class MainMenu_Credits : MonoBehaviour
 {
+    //all UI buttons needed when the credits button is pressed
     public GameObject play;
     public GameObject options;
     public GameObject credits;
@@ -13,6 +14,13 @@ public class MainMenu_Credits : MonoBehaviour
 
     public void CreditsClick()
     {
+        //when the credits button is pressed
+            //turn off play button
+            //turn off options button
+            //turn off credits button
+            //turn off exit button
+            //turn on return button
+         
         play.gameObject.SetActive(false);
         options.gameObject.SetActive(false);
         credits.gameObject.SetActive(false);
