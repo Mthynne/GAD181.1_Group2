@@ -5,7 +5,7 @@ using UnityEngine;
 public class Villager_Spawner: MonoBehaviour
 {
     public GameObject villagerPrefab;
-    public float respawnTime = 1.9f;
+    public float respawnTime = 1f;
     private Vector2 screenBounds;
     // Start is called before the first frame update
     void Start()
