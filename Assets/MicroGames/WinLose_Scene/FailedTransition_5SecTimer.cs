@@ -10,37 +10,13 @@ public class FailedTransition_5SecTimer : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        StartCoroutine(Tick()); //start the timer
+        float delayForMenu = 5f;
+        StartCoroutine(Tick(delayForMenu)); //start the timer
     }
 
-    IEnumerator Tick()
+    IEnumerator Tick(float delayForMenu)
     {
-        //if the countdown time is less then 0.1
-        //{
-            //run event to change the scene
-        //}
-        //else
-        //{
-            //tick down by one second more
-            //repeat
-        //}
-
-        if (countdownTillTransition <= 0.1f) 
-        {
-            TimerFinished();
-        }
-        else
-        {
-            yield return new WaitForSecondsRealtime(1f);
-
-            countdownTillTransition--;
-            StartCoroutine(Tick());
-        }
-    }
-    
-    //Runs the Timer done event.
-    void TimerFinished()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +1);
+        yield return new WaitForSeconds(delayForMenu);
+        SceneManager.LoadScene("MainMenu");
     }
 }

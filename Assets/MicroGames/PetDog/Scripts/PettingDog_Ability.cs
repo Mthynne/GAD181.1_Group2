@@ -75,15 +75,14 @@ public class PettingDog_Ability : MonoBehaviour
         if (WinGame == true && TimerEnded == true)
         {
             print("Winner!");
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-
+            Shared_EventsManager.GameHasBeenWon();
 
         }
         else
         {
 
             print("Failure!");
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            Shared_EventsManager.GameHasBeenLost();
 
         }
     }
