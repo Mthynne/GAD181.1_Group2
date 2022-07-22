@@ -6,7 +6,7 @@ public class SpawnObject : MonoBehaviour
 {
     Vector2 randomPosition;
     public float xRange = 3f;
-    public float yRange = 3f;
+    public float yRange = 2f;
 
     void Start()
     {
