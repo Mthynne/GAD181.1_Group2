@@ -11,6 +11,7 @@ public class Witch_Dodge : MonoBehaviour
     private Rigidbody2D player;
     public GameObject Witch;
     public AudioSource Hit;
+    private int HitAmount = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -36,6 +37,21 @@ public class Witch_Dodge : MonoBehaviour
         if (collision.collider.CompareTag("Villagers"))
         {
             Hit.Play();
+            HitAmount++;
+            HitLimit();
         }
     }
+
+    void HitLimit()
+    {
+        if (HitAmount == 3)
+        {
+            Destroy(this.gameObject);
+        }
+    }
+
+
+
 }
+
+

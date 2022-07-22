@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/FindIngredients.unity
     guid: c19f62204663c984da6e04e35b941162
   - enabled: 1
-    path: Assets/Scenes/Wiitch_Maze.unity
+    path: Assets/Scenes/Witch_Maze.unity
     guid: 19d7a7eeeec9e3a41841cb14bdf95d93
   - enabled: 1
     path: Assets/Scenes/PourIngredients_Scene.unity

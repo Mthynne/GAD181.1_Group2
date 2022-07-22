@@ -43,6 +43,8 @@ public class Villager_Movement : MonoBehaviour
                 Destroy(this.gameObject);
                 Debug.Log("You Lose!");
                 Shared_EventsManager.GameHasBeenLost();
+                
+
             }
             else
             {
