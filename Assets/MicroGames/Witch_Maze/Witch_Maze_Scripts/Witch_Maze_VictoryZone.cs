@@ -47,6 +47,7 @@ public class Witch_Maze_VictoryZone : MonoBehaviour
         {
             print("WINNER!");
             Shared_EventsManager.GameHasBeenWon();
+
         }
         else
         {

@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class Witch_Maze_Failure : MonoBehaviour
 {
-    private bool timerended;
-    private bool wingame;
+    
 
     void OnCollisionEnter2D(Collision2D collision)
     {
@@ -14,6 +13,7 @@ public class Witch_Maze_Failure : MonoBehaviour
 
             Destroy(collision.gameObject);
             Debug.Log("you lose!");
+            Shared_EventsManager.TimerPause();
             Shared_EventsManager.GameHasBeenLost();
         }
 

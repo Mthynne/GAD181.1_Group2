@@ -10,6 +10,15 @@ public class Shared_10SecTimer : MonoBehaviour
     private float countdownTime = 10.0f;  //10 seconds
     private bool isCounting;              //is it counting yes or no          
 
+    private void OnEnable()
+    {
+        Shared_EventsManager.StopTheTimer += TimerHasBeenStopped;
+    }
+
+    private void OnDisable()
+    {
+        Shared_EventsManager.StopTheTimer -= TimerHasBeenStopped;
+    }
     private void Awake()
     {
         isCounting = true;      //start counting when scene wakes
@@ -55,5 +64,11 @@ public class Shared_10SecTimer : MonoBehaviour
     void TimerFinished()
     {
         Shared_EventsManager.TimerDone();
+    }
+
+    void TimerHasBeenStopped()
+    {
+        isCounting = false;
+        countdownTime = 20.0f;
     }
 }

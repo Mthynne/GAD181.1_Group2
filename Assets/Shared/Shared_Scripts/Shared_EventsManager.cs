@@ -48,4 +48,14 @@ public class Shared_EventsManager : MonoBehaviour
     {
         LostTheGame();
     }
+
+    //Event to do Lose function
+    public delegate void TimerStop();
+    public static event TimerStop StopTheTimer;
+
+    public static void TimerPause()
+    {
+        StopTheTimer();
+
+    }
 }
