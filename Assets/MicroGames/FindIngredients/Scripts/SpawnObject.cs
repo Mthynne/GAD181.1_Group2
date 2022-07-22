@@ -5,24 +5,16 @@ using UnityEngine;
 public class SpawnObject : MonoBehaviour
 {
     Vector2 randomPosition;
-    public float xRange = 3f;
-    public float yRange = 2f;
 
     void Start()
     {
-
-
-        float xPosition = Random.Range(0 - xRange, 0 + xRange);
-        float yPosition = Random.Range(0 - yRange, 0 + yRange);
-
-        randomPosition = new Vector2(xPosition, yPosition);
-
-        transform.position = randomPosition;
-
-
-
+        //skin tone chicken bone leave me alone
+        this.transform.position = new Vector2(Random.Range(-7, 4), Random.Range(-4, 4));
+         
 
     }
+
+    
 
 
 }

@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - Villagers
+  - Apple
+  - Orange
+  - Cherry
+  - Tomato
+  - Pear
   layers:
   - Default
   - TransparentFX

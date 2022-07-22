@@ -4,32 +4,34 @@ using UnityEngine;
 
 public class PlayerInputScript : MonoBehaviour
 {
-    enum Answer {Apple, Orange, Banana, Grapes, Melon };
-
+    enum Answer {Apple, Orange, Cherry, Tomato, Pear};
+    public int ingredientID;
     public float clickCount;
-
-
-   /* void Start()
-    {
-        Answer myAnswer;
-
-        myAnswer = playerInput;
-    } */
-
-   /* public void playerInput()
-    {
-        
-    } */
 
 
     void OnMouseDown()
     {
-        clickCount += 1;
+
+
+
+
+
 
         Debug.Log(gameObject.name);
         Debug.Log(clickCount);
+        Destroy(gameObject);
 
-
+        // clickCount += 1;
     }
+
+
+
+
+
+
+
+
+
+
 
 }
