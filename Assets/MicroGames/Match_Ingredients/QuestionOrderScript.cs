@@ -8,14 +8,14 @@ public class QuestionOrderScript : MonoBehaviour
 
     void OnMouseDown()
     {
-        if(ingredientID == orderCounter)
+        /*if(ingredientID == orderCounter)
         {
             orderCounter ++;
         }
         else
         {
             Debug.Log("skin tone chicke nbone ");
-        }
+        }*/
     }
 
 
