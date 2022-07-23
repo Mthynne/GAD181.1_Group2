@@ -30,7 +30,7 @@ public class PettingDog_Ability : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             
             GainedPoints();
@@ -44,8 +44,8 @@ public class PettingDog_Ability : MonoBehaviour
     void GainedPoints()
     {
 
-        score += 10;
-        pointsScore.text = "Points: " + score;
+        score += 1;
+        pointsScore.text = "Pets: " + score;
 
 
     }
