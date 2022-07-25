@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 400561652}
   - component: {fileID: 400561656}
   m_Layer: 0
-  m_Name: Apple
+  m_Name: Apple 0
   m_TagString: Apple
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -234,7 +234,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ingredientID: 0
-  clickCount: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -333,7 +332,7 @@ GameObject:
   - component: {fileID: 613754009}
   - component: {fileID: 613754013}
   m_Layer: 0
-  m_Name: Tomato
+  m_Name: Tomato 3
   m_TagString: Tomato
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -431,7 +430,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ingredientID: 3
-  clickCount: 0
 --- !u!1 &712367432
 GameObject:
   m_ObjectHideFlags: 0
@@ -461,6 +459,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3de370e6462c78546bc382d3e3b66036, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Question: 
+  Answer: 
+  CorrectAnswer: 0
 --- !u!4 &712367434
 Transform:
   m_ObjectHideFlags: 0
@@ -590,7 +591,7 @@ GameObject:
   - component: {fileID: 1015221867}
   - component: {fileID: 1015221871}
   m_Layer: 0
-  m_Name: Orange
+  m_Name: Orange 1
   m_TagString: Orange
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -687,7 +688,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ingredientID: 1
-  clickCount: 0
 --- !u!1 &1017237662
 GameObject:
   m_ObjectHideFlags: 0
@@ -769,7 +769,7 @@ GameObject:
   - component: {fileID: 1067724992}
   - component: {fileID: 1067724996}
   m_Layer: 0
-  m_Name: Cherry
+  m_Name: Cherry 2
   m_TagString: Cherry
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -867,7 +867,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ingredientID: 2
-  clickCount: 0
 --- !u!1 &1360471956
 GameObject:
   m_ObjectHideFlags: 0
@@ -979,7 +978,7 @@ GameObject:
   - component: {fileID: 1512979678}
   - component: {fileID: 1512979682}
   m_Layer: 0
-  m_Name: Pear
+  m_Name: Pear 4
   m_TagString: Pear
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1076,4 +1075,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ingredientID: 4
-  clickCount: 0

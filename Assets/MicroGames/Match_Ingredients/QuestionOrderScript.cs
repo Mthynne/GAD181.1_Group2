@@ -4,19 +4,10 @@ using UnityEngine;
 
 public class QuestionOrderScript : MonoBehaviour
 {
-    int orderCounter = 0;
+   /* public string Question;
+    public string Answer;
 
-    void OnMouseDown()
-    {
-        /*if(ingredientID == orderCounter)
-        {
-            orderCounter ++;
-        }
-        else
-        {
-            Debug.Log("skin tone chicke nbone ");
-        }*/
-    }
+    public int CorrectAnswer;
 
 
 
