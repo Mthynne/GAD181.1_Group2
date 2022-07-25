@@ -20,6 +20,6 @@ public class AnswerScript : MonoBehaviour
         {
             Debug.Log("Lose");
         }
-    }
+    }*/
 
 }
