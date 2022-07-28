@@ -5,7 +5,11 @@ using UnityEngine;
 public class MatchIngredientsManager : MonoBehaviour
 {
     private int correctAnswer;
+
+    public GameObject[] Apple, Orange, Tomato, Cherry, Lime;
     //I will likely need: a public array of sprites
+
+    public SpriteRenderer spriteRenderer;
 
     void Start()
     {
@@ -14,6 +18,9 @@ public class MatchIngredientsManager : MonoBehaviour
 
 
     }
+
+
+
 
     public void PlayerAnswer(int answerButtonID)
     {
