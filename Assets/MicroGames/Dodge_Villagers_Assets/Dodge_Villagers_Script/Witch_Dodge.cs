@@ -12,6 +12,7 @@ public class Witch_Dodge : MonoBehaviour
     public GameObject Witch;
     public AudioSource Hit;
     private int HitAmount = 0;
+    public AudioSource Jump;
 
     // Start is called before the first frame update
     void Start()
@@ -28,6 +29,7 @@ public class Witch_Dodge : MonoBehaviour
         if (Input.GetButtonDown("Jump") && this.transform.position.y < -4.5f)
         {
             player.velocity = new Vector2(player.velocity.x, jumpSpeed);
+            Jump.Play();
         }
 
 
