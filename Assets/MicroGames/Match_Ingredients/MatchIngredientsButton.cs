@@ -11,7 +11,6 @@ public class MatchIngredientsButton : MonoBehaviour
     public void ButtonAction()
     {
         //Tell game manager button id
-        Debug.Log(buttonID);
         myManager.PlayerAnswer(buttonID);
 
     }

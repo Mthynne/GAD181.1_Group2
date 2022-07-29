@@ -39,7 +39,6 @@ public class MatchIngredientsManager : MonoBehaviour
 
     public void PlayerAnswer(int answerButtonID)
     {
-        print("You have selected the " + answerButtonID);
 
         if(answerButtonID == correctAnswer)
         {
@@ -48,7 +47,6 @@ public class MatchIngredientsManager : MonoBehaviour
             
             if(success >= 5)
             {
-                Debug.Log("Win");
                 WinCondition();
             }
             else
@@ -76,12 +74,10 @@ public class MatchIngredientsManager : MonoBehaviour
     {
         if (WinGame == true && TimerEnded == true)
         {
-            print("Winner!");
             Shared_EventsManager.GameHasBeenWon();
         }
         else
         {
-            print("Failure!");
             Shared_EventsManager.GameHasBeenLost();
         }
     }

@@ -30,7 +30,6 @@ public class TrackObject : MonoBehaviour
         //destroying the text of object clicked in the dashboard of game 
         remainingObjects -= 1;
         //keeping track of remaining objects
-        print(remainingObjects);
         WinCondition();
         
     }

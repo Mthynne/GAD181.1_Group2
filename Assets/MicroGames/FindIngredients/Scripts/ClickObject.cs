@@ -37,7 +37,6 @@ public class ClickObject : MonoBehaviour
     void TimeDuration()
     {
         TimerDone = true;
-        print("Timer done");
         EndGame();
     }
 
@@ -45,12 +44,10 @@ public class ClickObject : MonoBehaviour
     {
         if(WinGame == true && TimerDone == true)
         {
-            print("Success");
             Shared_EventsManager.GameHasBeenWon();
         }
         else
         {
-            print("Loser");
             Shared_EventsManager.GameHasBeenLost();
         }
     }
