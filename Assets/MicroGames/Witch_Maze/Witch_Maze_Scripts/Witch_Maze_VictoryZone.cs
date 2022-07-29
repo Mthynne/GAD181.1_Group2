@@ -41,20 +41,22 @@ public class Witch_Maze_VictoryZone : MonoBehaviour
     }
     void EndGame()
     {
-    
+
 
         if (WinGame == true && TimerEnded == true)
         {
-            print("WINNER!");
+
             Shared_EventsManager.GameHasBeenWon();
 
         }
         else
         {
-            print("FAILED!");
+
             Shared_EventsManager.GameHasBeenLost();
         }
+
     }
+        
 }
 
     

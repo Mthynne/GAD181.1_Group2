@@ -10,6 +10,7 @@ public class Witch_Maze_SceneChanger : MonoBehaviour
 
     public GameObject failedBTN; //using button for now as I have no image
     public GameObject WinBTN; //using button for now as I have no image
+    public GameObject failedTime;
 
     void OnEnable()
     {
@@ -26,6 +27,7 @@ public class Witch_Maze_SceneChanger : MonoBehaviour
     {
         failedBTN.SetActive(false);
         WinBTN.SetActive(false);
+        failedTime.SetActive(false);
         sceneSwap = false;
         sceneRetry = false;
     }
@@ -76,7 +78,7 @@ public class Witch_Maze_SceneChanger : MonoBehaviour
 
     void StartRetryTimer()
     {
-        failedBTN.SetActive(true);
+        failedTime.SetActive(true);
         sceneRetry = true;
     }
 }
