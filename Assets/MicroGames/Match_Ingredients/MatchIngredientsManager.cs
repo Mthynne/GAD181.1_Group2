@@ -43,7 +43,6 @@ public class MatchIngredientsManager : MonoBehaviour
         if(answerButtonID == correctAnswer)
         {
             success++;
-            Debug.Log(success);
             
             if(success >= 5)
             {
