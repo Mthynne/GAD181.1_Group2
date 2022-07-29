@@ -48,12 +48,14 @@ public class MixingAbility : MonoBehaviour
             WinCondition();
 
         }
+
+      
    
     }
 
     void WinCondition()
     {
-        if(score >= 15)
+        if(score >= 50)
         {
 
             WinGame = true;
@@ -81,7 +83,8 @@ public class MixingAbility : MonoBehaviour
         else
         {
             print("Failure!");
-            Shared_EventsManager.GameHasBeenLost();
+            Shared_EventsManager.GameHasBeenLost();         
+            score = 0;
         }
     }
     

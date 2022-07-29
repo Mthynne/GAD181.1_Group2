@@ -876,12 +876,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 484712072}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.08, y: -0.5, z: -0.020562}
-  m_LocalScale: {x: 3.6811116, y: 2.6808798, z: 2.2816}
+  m_LocalPosition: {x: 0.0635, y: -0.5, z: 0.88}
+  m_LocalScale: {x: 3.6476743, y: 2.6808798, z: 2.2816}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &484712077
 MonoBehaviour:
@@ -895,6 +895,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0d01fd0ddcd2404bb2d707ba7d311b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  material:
+  - {fileID: 2100000, guid: 364d490cfc9b60c48ba477c009cac47b, type: 2}
+  - {fileID: 2100000, guid: 322fe820bab3f9d478e538d83b107467, type: 2}
+  - {fileID: 2100000, guid: 2d12a3d1f8571d548abb49e515afdd70, type: 2}
+  - {fileID: 2100000, guid: a5d205fffb2d3d848861206a56862d11, type: 2}
+  source: {fileID: 1616745004}
+  SFX: {fileID: 8300000, guid: 4ac67d50143bd164aa2bb0e2cde65126, type: 3}
 --- !u!1 &504083351
 GameObject:
   m_ObjectHideFlags: 0
@@ -1252,7 +1259,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Press "A" and "D" to Mix the Potion
+  m_text: Press "A" and "D" to Mix the Pink Potion
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1841,7 +1848,7 @@ Transform:
   - {fileID: 760526056}
   - {fileID: 525046923}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &703678374
 GameObject:
@@ -3412,7 +3419,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1510378161}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3424,7 +3431,7 @@ Transform:
   - {fileID: 1782763991}
   - {fileID: 470197941}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1520362921
 GameObject:
@@ -3581,9 +3588,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: fd3238b89a6a0994d863aacc089cf39b, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 1d70712ac929be5419e322fb2a7d9d63, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
