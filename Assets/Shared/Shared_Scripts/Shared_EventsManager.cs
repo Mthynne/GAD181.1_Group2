@@ -58,4 +58,14 @@ public class Shared_EventsManager : MonoBehaviour
         StopTheTimer();
 
     }
+
+    public delegate void CollidePlayer();
+    public static event CollidePlayer PlayerDead;
+    
+    public static void HitWall()
+    {
+        PlayerDead();
+    }
+        
+
 }

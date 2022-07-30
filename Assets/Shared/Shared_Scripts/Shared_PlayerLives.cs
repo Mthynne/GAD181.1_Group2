@@ -16,11 +16,13 @@ public class Shared_PlayerLives : MonoBehaviour
     {
         Shared_EventsManager.CompleteGame += IncreaseLives;
         Shared_EventsManager.LostTheGame += DecreaseLives;
+        Shared_EventsManager.PlayerDead += DecreaseLives;
     }
     void OnDisable()
     {
         Shared_EventsManager.CompleteGame -= IncreaseLives;
         Shared_EventsManager.LostTheGame -= DecreaseLives;
+        Shared_EventsManager.PlayerDead -= DecreaseLives;
     }
 
     void Awake()

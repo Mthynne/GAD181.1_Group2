@@ -16,11 +16,13 @@ public class Witch_Maze_SceneChanger : MonoBehaviour
     {
         Shared_EventsManager.CompleteGame += ProgressStartSwapTimer; //from the "Shared_EventsManager"
         Shared_EventsManager.LostTheGame += StartRetryTimer; //from the "Shared_EventsManager"
+        Shared_EventsManager.PlayerDead += CollidedPlayer;
     }
     void OnDisable()
     {
         Shared_EventsManager.CompleteGame -= ProgressStartSwapTimer; //from the "Shared_EventsManager"
         Shared_EventsManager.LostTheGame -= StartRetryTimer; //from the "Shared_EventsManager"
+        Shared_EventsManager.PlayerDead -= CollidedPlayer;
     }
 
     void Start()
@@ -81,4 +83,12 @@ public class Witch_Maze_SceneChanger : MonoBehaviour
         failedTime.SetActive(true);
         sceneRetry = true;
     }
+
+    void CollidedPlayer()
+    {
+        failedBTN.SetActive(true);
+        sceneRetry = true; 
+    }
+
+
 }
