@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class CureDog_FillingUp : MonoBehaviour
 {
+    AudioSource PourSFX;
     private bool potionActivate = false; //for whether to pour or not
     private float intPourTime = 0.0f; //counter for holding **needs Work - Oscar**
     private int seconds;
 
     private bool GameTimerEnded = false;
     private bool WinGame = false;
+    bool sfxActive = false;
 
     void OnEnable()
     {
@@ -24,9 +26,23 @@ public class CureDog_FillingUp : MonoBehaviour
         CureDog_EventManager.NoPotion -= PotionFreeze;
         Shared_EventsManager.EndOfMicroGame -= GameTimeDuration; //from the "Shared_EventsManager"
     }
-    
+    void Start()
+    {
+        PourSFX = GetComponent<AudioSource>();
+    }
+
     void Update()
     {
+        if(sfxActive == true)
+        {
+            PourSFX.Play(1);
+        }
+        else
+        {
+            PourSFX.Stop();
+        }
+        
+        
         //if (the mouse button is being held down)
         //{
             //increase the number by one every second
@@ -72,7 +88,7 @@ public class CureDog_FillingUp : MonoBehaviour
             //win the game
             //print win
         //}
-        
+        sfxActive = true;
         //seconds
         intPourTime += Time.deltaTime;
         //turn float into seconds
@@ -82,19 +98,18 @@ public class CureDog_FillingUp : MonoBehaviour
         if(intPourTime >= 6f)
         {
             WinGame = true;
-            print("win");
         }
         else 
         {
             WinGame = false;
-            print("win");
         }
     }
 
     void TimerResetPour()
     {
         //reset the value of the timer back to 0 and keep at 0 until turned on.
-
+        
+        sfxActive = false;
         //seconds
         intPourTime = Time.deltaTime;
         //turn float into seconds

@@ -991,7 +991,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1107681462}
   m_CullTransparentMesh: 1
---- !u!1 &1257921146
+--- !u!1 &1247073867
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -999,8 +999,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1257921148}
-  - component: {fileID: 1257921147}
+  - component: {fileID: 1247073869}
+  - component: {fileID: 1247073868}
   m_Layer: 0
   m_Name: Instructions_Music
   m_TagString: Untagged
@@ -1008,19 +1008,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!82 &1257921147
+--- !u!82 &1247073868
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1257921146}
+  m_GameObject: {fileID: 1247073867}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: f279c3bd476447b42838143ba9737540, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 958b9861544d2a44994c1d9fda8553c9, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.355
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1104,13 +1104,13 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!4 &1257921148
+--- !u!4 &1247073869
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1257921146}
+  m_GameObject: {fileID: 1247073867}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 272.5265, y: 110.1156, z: -3.873757}
   m_LocalScale: {x: 1, y: 1, z: 1}
