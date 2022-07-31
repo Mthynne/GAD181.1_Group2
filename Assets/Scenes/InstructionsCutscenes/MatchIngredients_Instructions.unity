@@ -151,7 +151,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 72818483}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: bc5270bb88c91ac44927b963fd4fa7a7, type: 3}
+  m_VideoClip: {fileID: 0}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -894,20 +894,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Now that you''ve got the right ingredients you can now pour them into
-    the cauldron.
-
-
-    Pour at least 18 ingredients into the cauldron to win!
-
-    ______________________
-
-
-    Controls:
-
-
-    Use
-    Space to rotate the cup.'
+  m_text: "Now that you have safely arrived home it's time to start preparing the
+    potion! \nQuickly match the ingredients as they appear at the top of the screen
+    to create the recipe for the potion!\n______________________\n\nControls:\n\nUse
+    Left Mouse Click To Click The Ingredients"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
