@@ -5,8 +5,6 @@ using TMPro;
 
 public class DogBeautyComp_MovementSpice : MonoBehaviour
 {
-    private bool spinningEntertainment = true;
-
     private int Clicks = 0;
     public TextMeshProUGUI clapScore;
 
@@ -22,20 +20,24 @@ public class DogBeautyComp_MovementSpice : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if(Clicks == 3 || Clicks == 6 || Clicks == 9)
+        if(Clicks == 5)
         {
-            this.transform.Rotate(new Vector3(90, 180, 0));
+            this.GetComponent<Animator>().SetTrigger("StartRoutine");
         }
-        else if(Clicks == 1 || Clicks == 4 || Clicks == 7)
+        else if(Clicks == 20 || Clicks == 40 || Clicks == 60 || Clicks == 80 || Clicks == 100)
         {
-            this.transform.Rotate(new Vector3(90, 0, 0));
+            this.GetComponent<Animator>().SetTrigger("FlipDog");
+        }
+        else if(Clicks == 10 || Clicks == 30 || Clicks == 50 || Clicks == 70 || Clicks == 90)
+        {
+            this.GetComponent<Animator>().SetTrigger("ReturnDog");
         }
     }
 
     void SwitchingSides()
     {
         Clicks++;
-        clapScore.text = "Claps: " + Clicks;
+        clapScore.text = "Claps: " + Clicks + "/50";
     }
 
 }
