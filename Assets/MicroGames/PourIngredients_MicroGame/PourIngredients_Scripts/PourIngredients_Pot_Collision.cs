@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class PourIngredients_Pot_Collision : MonoBehaviour
 {
     private int ingredNum;
     private bool TimerEnded;
     private bool WinGame;
+
+    public TextMeshProUGUI IngredientsAdded;
 
     void OnEnable() //enable called event
     {
@@ -36,7 +39,7 @@ public class PourIngredients_Pot_Collision : MonoBehaviour
         if(collision.gameObject.GetComponent<PourIngredients_Ingredient_Prefab>() != null)
         {
             ingredNum++;
-            print("Added ingredient: " + ingredNum);
+            IngredientsAdded.text = "Ingredient: " + ingredNum + "/15";
             WinCondition();
         }
     }
@@ -49,9 +52,10 @@ public class PourIngredients_Pot_Collision : MonoBehaviour
             //player is eligeble to win the game
         //}
 
-        if(ingredNum >= 18)
+        if(ingredNum >= 15)
         {
             WinGame = true;
+            Shared_EventsManager.GameHasBeenWon();
         }
     }
 
