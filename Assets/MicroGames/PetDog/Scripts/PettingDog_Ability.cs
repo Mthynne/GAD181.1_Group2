@@ -11,6 +11,8 @@ public class PettingDog_Ability : MonoBehaviour
     private bool TimerEnded;
     private bool WinGame;
     public TextMeshProUGUI pointsScore;
+    public AudioSource source2;
+    public AudioClip SFX2;
 
     void OnEnable() //enable called event
     {
@@ -38,7 +40,15 @@ public class PettingDog_Ability : MonoBehaviour
 
         }
 
+        if(score >= 10)
+        {
+
+            source2.PlayOneShot(SFX2);
+
+        }
+
     }
+
         
 
     void GainedPoints()
@@ -46,7 +56,7 @@ public class PettingDog_Ability : MonoBehaviour
 
         score += 1;
         pointsScore.text = "Pets: " + score;
-
+        
 
     }
 
@@ -74,9 +84,10 @@ public class PettingDog_Ability : MonoBehaviour
     {
         if (WinGame == true && TimerEnded == true)
         {
+            source2.PlayOneShot(SFX2);
             print("Winner!");
             Shared_EventsManager.GameHasBeenWon();
-
+            
         }
         else
         {
