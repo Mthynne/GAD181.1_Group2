@@ -7,13 +7,13 @@ public class Shared_Space_Hold : MonoBehaviour
     void Update()
     {
         //handles left mouse button hold
-        if(Input.GetKeyDown("space"))
+        if(Input.GetButtonDown("Jump"))
         {
             print("Space Held Down");
             //event is still mouse input because I only recently changed it to space bar input
             Shared_EventsManager.HeldMouse();
         }
-        else if(Input.GetKeyUp("space"))
+        else if(Input.GetButtonUp("Jump"))
         {
             print("Space Released");
             //event is still mouse input because I only recently changed it to space bar input

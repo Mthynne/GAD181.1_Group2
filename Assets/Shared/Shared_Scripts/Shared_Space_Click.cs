@@ -8,7 +8,7 @@ public class Shared_Space_Click : MonoBehaviour
     void Update()
     {
        //handles left mouse click hold
-        if(Input.GetKeyDown("space"))
+        if(Input.GetButtonDown("Jump"))
         {
             print("Space clicked");
             //event is still mouse input because I only recently changed it to space bar input
