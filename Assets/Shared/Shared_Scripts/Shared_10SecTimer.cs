@@ -56,7 +56,7 @@ public class Shared_10SecTimer : MonoBehaviour
         //prints time 
         if ((isCounting) && (countdownTime != 0.1f))
         {
-            countdownText.text = "TIME LEFT: " + countdownTime.ToString();
+            countdownText.text = countdownTime.ToString();
         }
     }
 
