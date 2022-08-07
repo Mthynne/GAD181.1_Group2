@@ -9,7 +9,7 @@ public class Credits_SceneChanger : MonoBehaviour
     {
         if(Input.GetKeyDown("escape"))
         {
-            
+            SceneManager.LoadScene("MainMenu");
         }
     }
     
