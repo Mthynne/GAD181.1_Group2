@@ -69,6 +69,9 @@ EditorBuildSettings:
     path: Assets/Scenes/EndOfGameCutscene.unity
     guid: 5fcaeeaad65a1bb4f90b433bb11446f6
   - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 706de5aef2265e746903b647c108b4ba
+  - enabled: 1
     path: Assets/Scenes/LoseScene.unity
     guid: 691391d72e582724f924a9d068297000
   m_configObjects: {}

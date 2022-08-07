@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class MainMenu_Credits : MonoBehaviour
 {
@@ -14,17 +15,6 @@ public class MainMenu_Credits : MonoBehaviour
 
     public void CreditsClick()
     {
-        //when the credits button is pressed
-            //turn off play button
-            //turn off options button
-            //turn off credits button
-            //turn off exit button
-            //turn on return button
-         
-        play.gameObject.SetActive(false);
-        options.gameObject.SetActive(false);
-        credits.gameObject.SetActive(false);
-        exit.gameObject.SetActive(false);
-        Return.gameObject.SetActive(true);
+        SceneManager.LoadScene("Credits");
     }
 }

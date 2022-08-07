@@ -158,9 +158,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -100, y: -75}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -30, y: -30}
+  m_SizeDelta: {x: 185, y: 165}
+  m_Pivot: {x: 1, y: 1}
 --- !u!114 &199082484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -181,7 +181,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 9fa5e6dc2f535c84fa69f825d37f4bba, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -211,7 +211,7 @@ GameObject:
   - component: {fileID: 229794059}
   - component: {fileID: 229794058}
   m_Layer: 5
-  m_Name: ReturnBTN
+  m_Name: MainMenuBTN
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -257,7 +257,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Return
+  m_text: Main Menu
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -428,6 +428,7 @@ RectTransform:
   m_Children:
   - {fileID: 1107681463}
   - {fileID: 199082483}
+  - {fileID: 1779970954}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -449,7 +450,7 @@ GameObject:
   - component: {fileID: 1107681465}
   - component: {fileID: 1107681464}
   m_Layer: 5
-  m_Name: Play Game
+  m_Name: MainMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -473,9 +474,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 178.4234, y: -112.5}
+  m_AnchoredPosition: {x: 30, y: -30}
   m_SizeDelta: {x: 277.8468, y: 85}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0, y: 1}
 --- !u!114 &1107681464
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -520,9 +521,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: SceneChangeInstructions, Assembly-CSharp
-        m_MethodName: PlayTheGameNow
+      - m_Target: {fileID: 1373304031}
+        m_TargetAssemblyTypeName: Credits_SceneChanger, Assembly-CSharp
+        m_MethodName: SceneChange
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -570,6 +571,190 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1107681462}
   m_CullTransparentMesh: 1
+--- !u!1 &1170128114
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1170128115}
+  - component: {fileID: 1170128117}
+  - component: {fileID: 1170128116}
+  m_Layer: 5
+  m_Name: CreditsNames_TEXT
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1170128115
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1170128114}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -15.246502}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1779970954}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 4.6459007, y: -3976.1929}
+  m_SizeDelta: {x: 1397.2, y: 8649.792}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1170128116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1170128114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "Project leader:\r\nMaddie Thynne\r\n\r\nProject Scum:\r\nJacob Wilson\r\n\r\nLead
+    QA Analyst:\r\nMarcus Arena\r\n\r\nAdditional QA analyst:\r\nJacob Wilson\r\nMaddie
+    Thynne\r\nOscar SKinner\r\n\r\nLead Programmer:\r\nOscar Skinner\r\n\r\nAdditional
+    Programmers:\r\nJacob Wilson\r\nMaddie Thynne\r\nMarcus Arena\r\n\r\nMusic Sourcers:\r\nMarcus
+    Arena\r\nJacob Wilson\r\nMaddie Thynne \r\nOscar Skinner\r\n\r\nLead Asset Creators:\r\nRae\r\n\r\nAdditional
+    Asset creators:\r\nHarry \r\nCharan\r\nKiah\r\n\r\nLead Designers:\r\nHarry\r\n\r\nAdditional
+    Designers:\r\nRae\r\nKiah\r\nCharan\r\n\r\nText designers:\r\nHarry\r\nRae\r\nKiah
+    \r\nCharan \r\n\r\nLead Animators:\r\nSpecial Thanks to Rex for helping teach
+    the animation skills\r\n\r\nAdditional Animators:\r\nMarcus Arena\r\nOscar Skinner\r\n\r\nGame
+    testers:\r\nMary \r\nBandit\r\nDeklan \r\nMarcus G\r\nOlivia\r\nLiv\r\n\r\nLead
+    Facilitators:\r\nRex\r\nFae\r\n\r\nMain Game scene creators: \r\nMenu scene:\r\nOscar
+    Skinner\r\n\r\nMenu assets:\r\nCharan(?)\r\n\r\nCutscenes scene:\r\nOscar Skinner\r\n\r\nCutscene
+    animatic artist:\r\nKosta Papanotas \r\n\r\nScene transitions:\r\nOscar Skinner\r\n\r\nScene
+    transition vfx:\r\nMarcus Arena\r\n\r\nScene transition assets:\r\nHarry\r\nRae\r\nKiah
+    \r\nCharan \r\n\r\nFind ingredients game:\r\nMaddie Thynne\r\n\r\nFind ingredients
+    assets:\r\nHarry\r\n\r\nMaze game:\r\nMarcus Arena\r\n\r\nMaze game assets:\r\nRae\r\n\r\nMatch
+    ingredients game:\r\nMaddie Thynne\r\n\r\nMatch ingredients assets:\r\nHarry\r\n\r\nPour
+    ingredients game:\r\nOscar Skinner\r\n\r\nPour ingredients assets:\r\nHarry\r\nJen\r\n\r\nMix
+    ingredients game:\r\nJacob Wilson\r\n\r\nMix ingredients assets:\r\nJen\r\n\r\nCure
+    dog game:\r\nOscar Skinner\r\n\r\nCure dog assets:\r\nRae\r\n\r\nDodge villagers
+    game:\r\nMarcus Arena\r\n\r\nDodge villagers assets:\r\nRae\r\nJen\r\n\r\nDog
+    beauty competition game:\r\nOscar Skinner\r\n\r\nDog beauty competition assets:\r\nRae\r\nKiah\r\n\r\nPet
+    the dog game:\r\nJacob Wilson\r\n\r\nPet the dog assets:\r\nRae\r\nKiah\r\n\r\nUI
+    assets:\r\nCharan\r\n\r\n\r\nMusic:\r\nMain menu music: \r\nComposed by Oscar
+    Skinner\r\n\r\nOpening Cutscenes music:\r\n\u201CWaves\u201D\r\nWritten and Performed
+    by HoliznaCC0\r\nPublished onto FMA (Free Music Archive)\r\nPublished in Pittsburgh
+    Pa USA\r\n\r\nClosing Cutscenes music:\r\n\u201CBlue Skies\u201D\r\nWritten and
+    Performed by HoliznaCC0\r\nPublished onto FMA (Free Music Archive)\r\nPublished
+    in Pittsburgh Pa USA\r\n\r\nScene transitions music:\r\n\u201CSunny Afternoon\u201D\r\nWritten
+    and Performed by HoliznaCC0\r\nPublished onto FMA (Free Music Archive)\r\nPublished
+    in Pittsburgh Pa USA\r\n\r\nFind ingredients music:\r\n\u201CBlue Skies\u201D\r\nWritten
+    and Performed by HoliznaCC0\r\nPublished onto FMA (Free Music Archive)\r\nPublished
+    in Pittsburgh Pa USA\r\n\r\nMaze game music :\r\n\u201CDance Till You Die\u201D\r\nWritten
+    and Performed by HoliznaCC0\r\nPublished onto FMA (Free Music Archive)\r\nPublished
+    in Pittsburgh Pa USA\r\n\r\nMaze game SFX :\r\nMarcus Arena\r\n\r\nMatch ingredients
+    music:\r\n\u201CRed Skies\u201D\r\nWritten and Performed by HoliznaCC0\r\nPublished
+    onto FMA (Free Music Archive)\r\nPublished in Pittsburgh Pa USA\r\n\r\nPour ingredients
+    music:\r\n\u201CDance Till You Die\u201D\r\nWritten and Performed by HoliznaCC0\r\nPublished
+    onto FMA (Free Music Archive)\r\nPublished in Pittsburgh Pa USA\r\n\r\nMix ingredients
+    music:\r\n\u201CThoughts Growing Mold\u201D\r\nWritten and Performed by HoliznaCC0\r\nPublished
+    onto FMA (Free Music Archive)\r\nPublished in Pittsburgh Pa USA\r\n\r\nCure dog
+    music:\r\n\u201CRed Skies\u201D\r\nWritten and Performed by HoliznaCC0\r\nPublished
+    onto FMA (Free Music Archive)\r\nPublished in Pittsburgh Pa USA\r\n\r\nDodge
+    villagers music:\r\n\u201C50 Over the Speed Limit\u201D\r\nWritten and Performed
+    by HoliznaCC0\r\nPublished onto FMA (Free Music Archive)\r\nPublished in Pittsburgh
+    Pa USA\r\n\r\nDodge villagers SFX :\r\nMarcus Arena\r\n\r\nDog beauty competition
+    music:\r\n\u201C50 Over the Speed Limit\u201D\r\nWritten and Performed by HoliznaCC0\r\nPublished
+    onto FMA (Free Music Archive)\r\nPublished in Pittsburgh Pa USA\r\n\r\nPet the
+    dog music:\r\n\u201CThoughts Growing Mold\u201D\r\nWritten and Performed by HoliznaCC0\r\nPublished
+    onto FMA (Free Music Archive)\r\nPublished in Pittsburgh Pa USA\r\n"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 9f532d85ff2eaf547b0e0ae8681762ea, type: 2}
+  m_sharedMaterial: {fileID: -2184844694595559991, guid: 9f532d85ff2eaf547b0e0ae8681762ea, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1170128117
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1170128114}
+  m_CullTransparentMesh: 1
 --- !u!1 &1373304028
 GameObject:
   m_ObjectHideFlags: 0
@@ -614,6 +799,53 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 791d5d85347770944b6434c86d9c8b32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1779970953
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1779970954}
+  - component: {fileID: 1779970955}
+  m_Layer: 0
+  m_Name: CreditsScroll
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1779970954
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1779970953}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -4.645874, y: -1002.50714, z: 15.246502}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1170128115}
+  - {fileID: 2030404234}
+  m_Father: {fileID: 824895156}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1779970955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1779970953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faa3ab73f0296304ab20d8f39dfcc2ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
 --- !u!1 &1895621902
 GameObject:
   m_ObjectHideFlags: 0
@@ -638,10 +870,10 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1895621902}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 594c7709a63d30042b5a33a0f7c95245, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 11213f57a4c688f469c4256571e77dcc, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.1
   m_Pitch: 1
@@ -742,6 +974,141 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2030404233
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2030404234}
+  - component: {fileID: 2030404236}
+  - component: {fileID: 2030404235}
+  m_Layer: 5
+  m_Name: CreditsTitle_TEXT (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2030404234
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2030404233}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -15.246502}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1779970954}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 4.645851, y: 396.50708}
+  m_SizeDelta: {x: 1397.2, y: 95.6814}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2030404235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2030404233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Credits
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 9f532d85ff2eaf547b0e0ae8681762ea, type: 2}
+  m_sharedMaterial: {fileID: -2184844694595559991, guid: 9f532d85ff2eaf547b0e0ae8681762ea, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 70
+  m_fontSizeBase: 70
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 5
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &2030404236
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2030404233}
+  m_CullTransparentMesh: 1
 --- !u!1 &2067115009
 GameObject:
   m_ObjectHideFlags: 0
@@ -820,6 +1187,7 @@ GameObject:
   - component: {fileID: 2105171489}
   - component: {fileID: 2105171488}
   - component: {fileID: 2105171487}
+  - component: {fileID: 2105171490}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -893,3 +1261,55 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &2105171490
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105171486}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 0
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
