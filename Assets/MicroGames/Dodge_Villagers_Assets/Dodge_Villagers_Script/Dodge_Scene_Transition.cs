@@ -38,7 +38,7 @@ public class Dodge_Scene_Transition : MonoBehaviour
         //}
         if (sceneSwap == true)
         {
-            float delayForSceneSwap = 2f;
+            float delayForSceneSwap = 1.8f;
             StartCoroutine(LoadNewSceneAfterDelay(delayForSceneSwap));
         }
 
