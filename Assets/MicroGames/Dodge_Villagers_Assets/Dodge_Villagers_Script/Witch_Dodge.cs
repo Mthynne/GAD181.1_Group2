@@ -29,7 +29,7 @@ public class Witch_Dodge : MonoBehaviour
         if (Input.GetButtonDown("Jump") && this.transform.position.y < -4.5f)
         {
             player.velocity = new Vector2(player.velocity.x, jumpSpeed);
-            //this.GetComponent<Animator>().SetTrigger("JumpTrigger");
+            this.GetComponent<Animator>().SetTrigger("JumpTrigger");
             Jump.Play();
         }
 

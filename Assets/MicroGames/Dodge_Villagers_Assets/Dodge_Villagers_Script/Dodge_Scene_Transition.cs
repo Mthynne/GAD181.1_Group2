@@ -77,6 +77,7 @@ public class Dodge_Scene_Transition : MonoBehaviour
     void StartRetryTimer()
     {
         failedBTN.SetActive(true);
+        Shared_EventsManager.TimerPause();
         sceneRetry = true;
     }
 }
