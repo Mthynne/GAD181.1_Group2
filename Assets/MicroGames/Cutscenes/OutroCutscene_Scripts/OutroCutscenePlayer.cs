@@ -23,6 +23,6 @@ public class OutroCutscenePlayer : MonoBehaviour
     void CheckOver(UnityEngine.Video.VideoPlayer vp)
     {
         //change the scene when the video reaches the end.
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +1);
     }
 }
