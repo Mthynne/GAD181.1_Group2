@@ -88,7 +88,7 @@ public class CureDog_FillingUp : MonoBehaviour
             //win the game
             //print win
         //}
-        sfxActive = true;
+
         //seconds
         intPourTime += Time.deltaTime;
         //turn float into seconds
