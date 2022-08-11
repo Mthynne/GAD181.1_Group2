@@ -48,7 +48,10 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
+<<<<<<< HEAD
   controlID: 114
+=======
+>>>>>>> origin/main
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -224,7 +227,10 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
+<<<<<<< HEAD
   controlID: 16
+=======
+>>>>>>> origin/main
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -249,7 +255,10 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
+<<<<<<< HEAD
   controlID: 17
+=======
+>>>>>>> origin/main
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -414,22 +423,32 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
+<<<<<<< HEAD
     - Assets/Shared/Shared_Images/Characters
+=======
+>>>>>>> origin/main
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
+<<<<<<< HEAD
   - Assets/Shared/Shared_Images/Characters
+=======
+>>>>>>> origin/main
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\1027514\Documents\GAD181.1_Group2
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
+<<<<<<< HEAD
     scrollPos: {x: 0, y: 136.33331}
     m_SelectedIDs: 045f0000
     m_LastClickedID: 24324
     m_ExpandedIDs: 00000000c05b0000c25b0000c45b0000e65b0000fe5e000000ca9a3b
+=======
+    scrollPos: {x: 0, y: 0}
+>>>>>>> origin/main
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -457,7 +476,10 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000c05b0000c25b0000c45b0000
+=======
+>>>>>>> origin/main
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -585,9 +607,12 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
       m_SelectedIDs: 74740000
       m_LastClickedID: 29812
       m_ExpandedIDs: ded8ffff56d9ffffe0e2ffffa8e6ffff1ce7ffff88e7ffff10e9ffff6ce9ffffcee9ffff26eaffff70eaffff9ef0ffffd6f0ffffd8f7ffff62f9ffff46faffff36fbffffec590000425c00004c5c0000b65d0000345e0000465e0000965e000070630000f46800006c6900008a6a0000
+=======
+>>>>>>> origin/main
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: MainDoggo
@@ -836,9 +861,12 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
     m_Target: {x: -0.26364696, y: -0.29514396, z: 0.024138726}
     speed: 2
     m_Value: {x: -0.22760594, y: -0.2509118, z: 0.020564094}
+=======
+>>>>>>> origin/main
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -885,6 +913,7 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
+<<<<<<< HEAD
     m_Target: {x: 0, y: 0, z: 0, w: 1}
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
@@ -892,6 +921,8 @@ MonoBehaviour:
     m_Target: 7.586129
     speed: 2
     m_Value: 7.9435906
+=======
+>>>>>>> origin/main
   m_Ortho:
     m_Target: 1
     speed: 2
