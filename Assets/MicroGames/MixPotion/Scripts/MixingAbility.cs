@@ -5,7 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class MixingAbility : MonoBehaviour
 {
-    public GameObject Spoon;
+    public SpriteRenderer spriteRenderer;
+    public Sprite SpoonRight;
+    public Sprite SpoonLeft;
     public static int score = 0;
     public float movementSpeed = 10f;
     private bool TimerEnded;
@@ -33,7 +35,7 @@ public class MixingAbility : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.A))
         {
-            Spoon.transform.position = new Vector3(-3.23f, -1.87f, 0);
+            spriteRenderer.sprite = SpoonLeft;
             score += 1;
             print("A key was pressed Score: " + score);
             WinCondition();
@@ -42,7 +44,7 @@ public class MixingAbility : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.D))
         {
 
-            Spoon.transform.position = new Vector3(-5.23f, -1.87f, 0);
+            spriteRenderer.sprite = SpoonRight;
             score += 1;
             print("D key was pressed Score: " + score);
             WinCondition();
