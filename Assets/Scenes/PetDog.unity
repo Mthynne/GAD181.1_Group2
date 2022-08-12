@@ -1014,7 +1014,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointsScore: {fileID: 1193613113}
   source2: {fileID: 1260994610}
-  SFX2: {fileID: 8300000, guid: 54ae2c2f6f57772479b769b51e63cf39, type: 3}
+  SFX2: {fileID: 8300000, guid: 4f880efc6efdefe419378472a218762a, type: 3}
 --- !u!114 &689732675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1125,8 +1125,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -100, y: 25}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -128.29736, y: 25}
+  m_SizeDelta: {x: 256.5946, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1193613113
 MonoBehaviour:
