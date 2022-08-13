@@ -81,6 +81,7 @@ public class Witch_Maze_SceneChanger : MonoBehaviour
     void StartRetryTimer()
     {
         failedTime.SetActive(true);
+        Destroy(GameObject.FindWithTag("Player"));
         sceneRetry = true;
     }
 
