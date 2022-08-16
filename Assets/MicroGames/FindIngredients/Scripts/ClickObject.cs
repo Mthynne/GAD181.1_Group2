@@ -45,10 +45,12 @@ public class ClickObject : MonoBehaviour
         if(WinGame == true && TimerDone == true)
         {
             Shared_EventsManager.GameHasBeenWon();
+            //if the win game bool is triggered to true and timerdone is triggered to true, the code follows through to the win game script
         }
         else
         {
             Shared_EventsManager.GameHasBeenLost();
+            //if either of these bools have not been triggered to true then the game has been lost
         }
     }
 

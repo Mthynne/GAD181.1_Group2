@@ -39,11 +39,13 @@ public class TrackObject : MonoBehaviour
         if (remainingObjects <= 0)
         {
             Shared_EventsManager.GameHasBeenWon();
+            //if the amount of remaining objects is equal to or less than 0 then the game will go through to the win screen
         }
     }
 
     void RestartRemainingObjects()
     {
         remainingObjects = 5;
+        //if the game is lost and restarted, the amount of remaining objects goes back up to 5
     }
 }
