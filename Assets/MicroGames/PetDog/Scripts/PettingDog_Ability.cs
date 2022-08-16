@@ -7,9 +7,14 @@ using TMPro;
 
 public class PettingDog_Ability : MonoBehaviour
 {
+    //Score starts at 0
     public static int score = 0;
+
+    //These are called from the Time Event Script
     private bool TimerEnded;
     private bool WinGame;
+
+    //These include The UI and Audio
     public TextMeshProUGUI pointsScore;
     public AudioSource source2;
     public AudioClip SFX2;
@@ -32,6 +37,7 @@ public class PettingDog_Ability : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //When the player hits Space They will call the GainedPoints Fucntion and Check the WinCondition
         if (Input.GetKeyDown(KeyCode.Space))
         {
             
@@ -40,6 +46,7 @@ public class PettingDog_Ability : MonoBehaviour
 
         }
 
+        //Everytime the score is >= 10 it will play a Bark Sound
         if(score >= 10)
         {
 
@@ -50,7 +57,7 @@ public class PettingDog_Ability : MonoBehaviour
     }
 
         
-
+    //This Function adds 1 point and adds the score to the UI
     void GainedPoints()
     {
 
@@ -60,6 +67,7 @@ public class PettingDog_Ability : MonoBehaviour
 
     }
 
+    //This will check once the score has reached 15 or more we will have entered the win condition
     void WinCondition()
     {
         if (score >= 15)
@@ -80,6 +88,7 @@ public class PettingDog_Ability : MonoBehaviour
 
     }
 
+    //If the win conditon and the timer has ended the player will win otherwise he player will fail.
     void EndGame()
     {
         if (WinGame == true && TimerEnded == true)

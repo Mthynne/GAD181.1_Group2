@@ -5,13 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class MixingAbility : MonoBehaviour
 {
+    //
     public SpriteRenderer spriteRenderer;
     public Sprite SpoonRight;
     public Sprite SpoonLeft;
 
+    //
     public static int score = 0;
     public float movementSpeed = 10f;
 
+    //
     private bool TimerEnded;
     private bool WinGame;
     private bool LeftMovement;
@@ -31,14 +34,14 @@ public class MixingAbility : MonoBehaviour
     {
         TimerEnded = false; //timer hasnt ended
         WinGame = false; //game hasn't won 
-        LeftMovement = true;
-        RightMovement = true;
+        LeftMovement = true; //The spoon can move Left
+        RightMovement = true; //The spoon can move Right
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        //When the player hits the A key and LeftMovement is activated it will change the sprite to left as well as add one point. This will also lock the LeftMovement so that it can't be spammed and unlock the RightMovement
         if (Input.GetKeyDown(KeyCode.A) && LeftMovement == true)
         {
             spriteRenderer.sprite = SpoonLeft;
@@ -50,6 +53,7 @@ public class MixingAbility : MonoBehaviour
             
         }
 
+        //When the player hits the D key and RightMovement is activated it will change the sprite to Right as well as add one point. This will also lock the RightMovement so that it can't be spammed and unlock the LeftMovement
         else if (Input.GetKeyDown(KeyCode.D) && RightMovement == true)  
         {
 
@@ -66,6 +70,7 @@ public class MixingAbility : MonoBehaviour
    
     }
 
+    //This will check once the score has reached 50 or more we will have entered the win condition
     void WinCondition()
     {
         if(score >= 50)
@@ -88,6 +93,7 @@ public class MixingAbility : MonoBehaviour
 
     void EndGame()
     {
+        //If the win conditon and the timer has ended the player will win otherwise he player will fail.
         if (WinGame == true && TimerEnded == true)
         {
             print("Winner!");

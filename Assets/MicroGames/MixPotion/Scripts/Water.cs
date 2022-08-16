@@ -72,6 +72,7 @@ public class Water : MonoBehaviour
 
     }
 
+    //Once the games ended the material will change back to the normal one
     void EndGame()
     {
 
