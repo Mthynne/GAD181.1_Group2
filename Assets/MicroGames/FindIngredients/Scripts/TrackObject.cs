@@ -39,6 +39,7 @@ public class TrackObject : MonoBehaviour
         if (remainingObjects <= 0)
         {
             Shared_EventsManager.GameHasBeenWon();
+            remainingObjects = 5;
             //if the amount of remaining objects is equal to or less than 0 then the game will go through to the win screen
         }
     }
