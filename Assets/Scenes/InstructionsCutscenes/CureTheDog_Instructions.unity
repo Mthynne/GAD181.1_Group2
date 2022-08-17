@@ -207,7 +207,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1373304029}
         m_TargetAssemblyTypeName: SceneChangeInstructions, Assembly-CSharp
         m_MethodName: PlayTheGameNow
         m_Mode: 1

@@ -207,9 +207,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: SceneChangeInstructions, Assembly-CSharp
-        m_MethodName: PlayTheGameNow
+      - m_Target: {fileID: 1866750944}
+        m_TargetAssemblyTypeName: CutscenePlayer, Assembly-CSharp
+        m_MethodName: SkipCutscene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
